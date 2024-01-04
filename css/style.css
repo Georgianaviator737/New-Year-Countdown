@@ -62,6 +62,17 @@ section p {
     animation: typing 4s steps(40, end) infinite;
 }
 
+#happyNewYear{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#happyNewYear h1 {
+    color: #c30022;
+}
+
 @keyframes colorChange {
     0% {
       border-color: #00a53c;
@@ -85,4 +96,35 @@ section p {
         width: 100%;
     }
 }
-  
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section div {
+        margin: 10px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .title, #happyNewYear {
+        font-size: 1.5rem;
+    }
+}   
