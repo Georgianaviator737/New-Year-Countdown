@@ -106,8 +106,8 @@ section p {
         width: 80%;
         margin: 0 auto;
         border-radius: 10px;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.3);
     }
 
     section {
